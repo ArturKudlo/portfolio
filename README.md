@@ -1,2 +1,2 @@
 # portfolio-site
-responsive portfolio - Dmitry Kudla 
+responsive portfolio - Artur Kudla 
