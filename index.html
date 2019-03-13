@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Artur Kudla // Junior Front-end Developer</title>
+<title>Artur Kudla //Junior Front-end Developer</title>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Artur Kudla">
+<meta name="description" content="Front-end developer who enjoys learning, problem solving and coding interactive products">
+
+<!--Google fonts-->   
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CMerriweather+Sans" rel="stylesheet">
 
 <!--Bootstrap links-->
 <link rel="stylesheet" href="style/bootstrap.min.css">
@@ -16,7 +24,6 @@
 
 </head>
 <body data-spy="scroll" data-target=".navbar">
-
     <!--navigation-->
     <header>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -33,6 +40,9 @@
                         <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#home" title="home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" title="portfolio">Portfolio</a>
                         </li>
                         <li>
                             <a href="#about" title="about">About</a>
@@ -52,8 +62,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="greeting">
-                        <h1>Hello,I'm Artur </h1>
-                        <p>Junior Front-end Developer</p>
+                        <h1>Hello, I'm Artur</h1>
+                        <p>Junior front-end developer</p>
+                        <a href="#portfolio" title="portfolio" class="btn btn-default">Find out More</a>
                     </div>
                 </div>
             </div>
@@ -61,37 +72,252 @@
     </section>
 
   <!--portfolio section-->
-   
+    <section id="portfolio" class="container-fluid portfolio-section">
+        <h2 class="section">Portfolio</h2>
+        <hr>
+        <div class="row">
+            <div class= "col-md-4 col-sm-6 col-xs-12 padding">
+                <div class="project-item">
+                    <a data-target="#projectModal_3" data-toggle="modal" title="view details">
+                        <div class="overlay">
+                            <div class="caption">
+                                <div class="project-title">
+                                <p>React App</p>
+                                </div>
+                            </div>
+                            <img src="img/reen.png" alt="project image" title="project image" class="portfolio-pic">
+                        </div>
+                        <div class="description">
+                           <p>culture-portal search</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class= "col-md-4 col-sm-6 col-xs-12 padding">
+                <div class="project-item">
+                    <a data-target="#projectModal_4" data-toggle="modal" title="view details">
+                        <div class="overlay">
+                            <div class="caption">
+                                <div class="project-title">
+                                    <p>Youtube app</p>
+                                </div>
+                            </div>
+                            <img src="img/youtube.png" alt="project image" title="project image" class="portfolio-pic">
+                        </div>
+                        <div class="description">
+                            <p>Responsive search video</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 padding">
+                <div class="project-item">
+                    <a data-target="#projectModal_5" data-toggle="modal" title="view details">
+                        <div class="overlay">
+                            <div class="caption">
+                                <div class="project-title">
+                                    <p>The simple game</p>
+                                </div>
+                            </div>
+                            <img src="img/game.png" alt="project image" title="project image" class="portfolio-pic">
+                        </div>
+                        <div class="description">
+                            <p>Javascript game </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     
-<!--section1/about -->
+
+<!---portfolio modal 3 -->
+    <div class="modal fade" id="projectModal_3" tabindex="0" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-md-8 col-md-offset-2">
+                            <a href="https://elegant-brattain-3c45c5.netlify.com/" target="_blank" title="REEN">
+                                <h2 class="header">Сulture-Portal</h2>
+                                <hr class="portfolio-hr">
+                            </a>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://github.com/ArturKudlo/dream_team" class="code-link" target="_blank" title="REEN">
+                                        <p class="git-link">see code</p>
+                                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                <a href="https://elegant-brattain-3c45c5.netlify.com/" class="code-link" target="_blank" title="REEN">
+                                    <p class="web-link">view website</p>
+                                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                                </a>
+                                </li>
+                            </ul>
+                            <h4>Completed:</h4>
+                            <p class="project-date">February, 2019</p>
+                            <h4>Description:</h4>
+                            <p>Working in groups, we have to develop a web portal about culture of Belarus on the given topic.
+                                The goal is to make content project quickly using available simple tools, distriburing work and helping each other.</p>
+                            <h4>Technology used:</h4>
+                            <p>HTML5, CSS3, JS, React</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="closeBtn btn btn-secondary" data-dismiss="modal">Close
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---portfolio modal 4 -->
+    <div class="modal fade" id="projectModal_4" tabindex="0" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-md-8 col-md-offset-2">
+                            <a href="https://arturkudlo.github.io/youtube-search/" target="_blank" title="Youtube">
+                                <h2 class="header">Youtube search</h2>
+                                <hr class="portfolio-hr">
+                            </a>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://github.com/ArturKudlo/youtube-search/tree/gh-pages" class="code-link" target="_blank" title="Youtube">
+                                        <p class="git-link">see code</p>
+                                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://arturkudlo.github.io/youtube-search/" class="code-link" target="_blank" title="Youtube">
+                                        <p class="web-link">view website</p>
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4>Completed:</h4>
+                            <p class="project-date">December, 2018</p>
+                            <h4>Description:</h4>
+                            <p>A Web application that allows you to download and view information about youtube clips based on the user's request. Data from the YouTube REST API is downloaded using the XHR cross-domain query</p>
+                            <h4>Technology used:</h4>
+                            <p>Javascript, Webpack, Eslint</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button class="closeBtn btn btn-secondary" data-dismiss="modal">Close
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---portfolio modal 5 -->
+    <div class="modal fade" id="projectModal_5" tabindex="0" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-md-8 col-md-offset-2">
+                            <a href="https://dreamy-hoover-21653d.netlify.com/" target="_blank" title="game">
+                                <h2 class="header">The simple game</h2>
+                                <hr class="portfolio-hr">
+                            </a>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://github.com/ArturKudlo/game/tree/gh-pages" class="code-link" target="_blank" title="game">
+                                        <p class="git-link">see code</p>
+                                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://dreamy-hoover-21653d.netlify.com/" class="code-link" target="_blank" title="game">
+                                        <p class="web-link">view website</p>
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4>Completed:</h4>
+                            <p class="project-date">January, 2019</p>
+                            <h4>Description:</h4>
+                            <p>The Battle begins, Player and Monster have 100hp or more each.
+                                Modal dialog appears and the Player chooses a spell first. It's up to you how to name and animate the spell. Spell types can also be different - with damage or heal effect or both.
+                                The Player goes to the Task screen. If the Player solves the task correctly, the spell will be applied, if the answer is wrong, it's Monster's turn to attack.
+                                The Monster rolls attack and damages the Player.
+                                If the Player wins, there will be a new battle with the next Monster. If the Player loses, high score table appears on the screen and it shows number of defeated Monsters and Player name.Target audience: children 6-8 y.o.</p>
+                            <p>Product Features:<br>
+                            1.	The player goes first and selects the method of attack.<br>
+                            2.	If you answer correctly, you will do zombie damage or heal yourself.  <br>
+                            3.	If the answer is not correct, then your lives will decrease.<br>
+                            4.	If the player does not answer correctly, then he takes damage.<br>
+                            5.	If you defeat a zombie, a new one will appear with more force.<br>
+                            6.	If in the mathematical task you encounter a fractional number, then feel free to round it to an integer number ..<br>
+                            </p>
+                            <h4>Technology used:</h4>
+                            <p>HTML5, CSS3, Javascript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="closeBtn btn btn-secondary" data-dismiss="modal">Close
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<!--section3/about -->
     <section id="about" class="container-fluid about-section">
         <h2 class="section">About</h2>
         <hr class="about-hr">
-            <div class="resume">
-                <a href="resume_Artur_Kudla_2_22_2018.doc.docx" title="resume" download class="btn btn-default">Download resume</a>
+           <div class="resume">
+                        <a href="resume_Dmitry_Kudla_2_22_2018.doc.docx" title="resume" download class="btn btn-default">Download resume</a>
             </div>
         <div class="row">
             <div class=" col-lg-3 col-md-offset-1 col-md-4 col-sm-12">
-                <img src="img/profile-photo.png" class="center-block" alt="Artur Kudla" title="Artur Kudla">
+                <img src="img/profile-photo.png" class="center-block" alt="Dmitry Kudla" title="Dmitry Kudla">
             </div>
-            <div class="summary">
+            <div class="col-lg-7 col-md-6 col-sm-12 summary">
                 <p>Secondary special education, Belarusian State College, Communications, English level A2,</p>
                 <p>I enjoy learning, problem solving and coding interactive products that reach people in a unique and engaging way. Always open to new and exciting opportunities.</p>
                 <p>As a web developer, I analyze problems and share creative solutions to improve both myself and those around me. I am knowledgable in many of the most widely used languages, libraries, and frameworks of modern web development like …</p>
             </div>
-            <div class=" skills">
+            <div class="col-lg-7 col-md-6 col-sm-12 skills">
                 <img src="http://imgur.com/vAD0hkj.png" alt="HTML5" title="HTML5" class="skills-logo">
                 <img src="http://imgur.com/iAntQVY.png" alt="CSS" title="CSS" class="skills-logo">
                 <img src="http://imgur.com/DXxVmhE.png" alt="JavaScript" title="JavaScript" class="skills-logo">
+                <img src="http://imgur.com/ADGqIBF.png" alt="React" title="React" class="skills-logo skills-logo-long">
                 <img src="http://imgur.com/9LmnzqX.png" alt="JQuery" title="JQuery" class="skills-logo">
-                <img src="img/git.jpg" alt="GIT" title="GIT" class="skills-logo">
             </div>
         </div>
     </section>
     
 <!---footer-->
     <footer id="contact">
-        <div class="footer">
+        <div class="col-lg-12 footer">
             <div class="row">
                 <p>Get in Touch</p>
                 <div class="socialmedia">

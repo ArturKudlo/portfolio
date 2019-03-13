@@ -1,3 +1,2 @@
-# portfolio
-
-Artur Kudla
+# portfolio-site
+responsive portfolio - Dmitry Kudla 
